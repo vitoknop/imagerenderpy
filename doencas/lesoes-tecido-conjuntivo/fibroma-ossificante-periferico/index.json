@@ -1,0 +1,28 @@
+{
+    "doenca": "Fibroma Ossificante Periférico",
+    "imagens": [
+        {   
+            "titulo": "Fotomicrografia",
+            "arquivo": ["fibroma-ossificante-periferico.PNG", "P-fibroma-ossificante-periferico.png"],
+            "legenda": {
+                "700097": "Epitélio normal",
+                "e03fc0": "Aumento de volume de tecido conjuntivo fibroso não-ulcerado de gengiva",
+                "3f99ff": "Material mineralizado (osso) formado"
+            }
+        }
+    ],
+    "topicos": [
+        {   
+            "titulo": "Aspectos Histopatológicos",
+            "list": true,
+            "texto": [
+                "Lesão tumoral de tecido conjuntivo",
+                "O padrão microscópico básico do fibroma ossificante periférico é de uma proliferação de fibroblastos associada à formação de material mineralizado.",
+                "O epitélio pode ou não estar ulcerado; e, se estiver, a superfície é coberta por uma membrana fibrinopurulenta com uma zona de tecido de granulação subjacente.",
+                "O componente fibroblástico profundo geralmente é celular, especialmente nas áreas de mineralização.",
+                "Em alguns casos, a proliferação fibroblástica e a mineralização associada representam somente um pequeno componente de um grande aumento de volume.",
+                "O componente mineralizado pode consistir em osso, material semelhante a cemento ou calcificação distrófica."
+            ]
+        }
+    ]
+}

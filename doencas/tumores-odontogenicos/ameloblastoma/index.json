@@ -1,0 +1,47 @@
+{
+    "doenca": "Ameloblastoma",
+    "imagens": [
+        {   
+            "titulo": "Radoiografia",
+            "arquivo": ["radio-ameloblastoma.PNG", "P-radio-ameloblastoma.png"],
+            "legenda": {
+                "e03fc0": "Estroma de tecido conjuntivo fibroso",
+                "00ff1e": "Múltiplas ilhas de epitélio odontogênico",
+                "00ff1a": "Células das ilhas exibindo diferenciação colunar periférica com polarização invertida",
+                "d48f0b": "Zonas centrais lembrando o retículo estrelado do esmalte, exibindo focos de degeneração cística"
+            }
+        },
+        {
+            "titulo": "Fotomicrografia",
+            "arquivo": ["ameloblastoma.PNG", "P-ameloblastoma.png"],
+            "legenda": {
+                "ffba00": "Lesão"
+            }
+        }
+    ],
+    "topicos": [
+        {   
+            "titulo": "Aspectos Histopatológicos",
+            "list": true,
+            "texto": [
+                "Tumor Odontogênico",
+                "Pode apresentar diversos padrões histopatológicos, como folicular e plexiforme (mais comuns), acantomatoso, de células granulares, desmoplásico e de células basais (menos comuns).",
+                "Aqui, abordaremos o folicular, que é o mais comum.",
+                "Ilhas de epitélio lembram o epitélio do órgão do esmalte em meio a um estroma maduro de tecido conjuntivo fibroso.",
+                "Os ninhos epiteliais consistem em uma região central de células angulares arranjadas frouxamente, lembrando o retículo estrelado de um órgão do esmalte.",
+                "Uma única camada de células colunares altas, semelhantes a ameloblastos, rodeiam essa região central, com núcleos localizados no polo oposto à membrana basal (polaridade reversa).", 
+                "Em outras áreas, as células da periferia podem se mostrar mais cubóides, assemelhando-se a células basais.",
+                "A formação de cistos é comum e pode variar desde microcistos, que se formam dentro das ilhas de epitélio, até grandes cistos macroscópicos, que podem ter muitos centímetros de diâmetro."
+            ]
+        },
+        {
+            "titulo": "Aspectos Radiográficos",
+            "list": true,
+            "texto": [
+                "Lesão radiolúcida multilocular ou unilocular, de tamanho variável, contorno festonado, com limites definidos.",
+                "Pode apresentar os padrões radiográficos de “favo de mel” ou “teia de aranha”",
+                "Pode causar expansão e rompimento das corticais ósseas, deslocamento e reabsorção radicular."
+            ]
+        }
+    ]
+}

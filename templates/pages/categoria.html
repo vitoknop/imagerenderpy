@@ -1,0 +1,33 @@
+{% include 'pages/header.html' %}
+
+<main>
+    <div class="container">
+        <div class="titulo">
+            <h2 id="categoria-titulo">{{ titulo }}</h2>
+            <hr/>
+        </div>
+        <div class="sub-titulo">
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry 
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry
+            </p>
+        </div>
+        
+        <div id="categorias" class="categorias">
+            {% for doenca in doencas %}
+            <div class="categoria">
+                <div class="categoria-titulo">
+                    <h3>{{doenca.doenca}}</h3>
+                </div>
+                <div class="categoria-link-div">
+                    <a class="categoria-link" href="http://localhost:5000/doenca?doenca={{ doenca.caminho}}">Visualizar</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div> 
+    </div
+</main>
+
+{% include 'pages/js_imports.html'%}
+
+{% include 'pages/footer.html' %}

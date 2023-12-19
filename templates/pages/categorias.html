@@ -1,0 +1,67 @@
+{% include 'pages/header.html' %}
+
+<main>
+    <div class="container">
+        <div class="titulo">
+            <h2>Categorias</h2>
+            <hr/>
+        </div>
+        <div class="sub-titulo">
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry 
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry
+            </p>
+        </div>
+        <div id="categorias" class="categorias">
+        </div>
+    </div>
+</main>
+
+<script>
+    fetch('http://localhost:5000/api/get-categorias')
+        .then(response => response.json())
+        .then(data => {
+            categorias = document.getElementById('categorias');
+
+            for (categoria of data) {
+                categoriaDiv = document.createElement('div');
+                categoriaDiv.classList.add('categoria');
+
+                categoriaTitulo = document.createElement('div');
+                categoriaTitulo.classList.add('categoria-titulo');
+
+                categoriaTituloH3 = document.createElement('h3');
+                categoriaTituloH3.innerHTML = categoria.titulo;
+
+                categoriaTitulo.appendChild(categoriaTituloH3);
+
+                categoriaDescricao = document.createElement('div');
+                categoriaDescricao.classList.add('categoria-descricao');
+
+                categoriaDescricaoP = document.createElement('p');
+                categoriaDescricaoP.innerHTML = "";
+
+                categoriaDescricao.appendChild(categoriaDescricaoP);
+
+                categoriaLinkDiv = document.createElement('div');
+                categoriaLinkDiv.classList.add('categoria-link-div');
+
+                categoriaLink = document.createElement('a');
+                categoriaLink.classList.add('categoria-link');
+                categoriaLink.href = 'http://localhost:5000/categoria?categoria=' + categoria.caminho;
+                categoriaLink.innerHTML = 'Visualizar';
+
+                categoriaLinkDiv.appendChild(categoriaLink);
+
+                categoriaDiv.appendChild(categoriaTitulo);
+                categoriaDiv.appendChild(categoriaDescricao);
+                categoriaDiv.appendChild(categoriaLinkDiv);
+
+                categorias.appendChild(categoriaDiv);
+            }
+        });
+</script>
+
+{% include 'pages/js_imports.html'%}
+
+{% include 'pages/footer.html' %}

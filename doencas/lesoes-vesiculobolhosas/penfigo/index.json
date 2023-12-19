@@ -1,0 +1,29 @@
+{
+    "doenca": "Pênfigo",
+    "imagens": [
+        {   
+            "titulo": "Fotomicrografia",
+            "arquivo": ["penfigo.PNG", "P-penfigo.png"],
+            "legenda": {
+                "700097": "Epitélio normal",
+                "e03fc0": "Tecido conjuntivo",
+                "24e237": "Acantólise",
+                "1303e4": "Células basais do epitélio"
+            }
+        }
+    ],
+    "topicos": [
+        {   
+            "titulo": "Aspectos Histopatológicos",
+            "list": true,
+            "texto": [
+                "Doença Vesiculobolhosa",
+                "Separação intraepitelial característica, que ocorre acima da camada de células basais do epitélio.",
+                "Pode ocorrer de todas as camadas superficiais do epitélio estarem descamadas, deixando somente as células basais, que são descritas sendo semelhantes à “fileira de pedras de sepulturas”.", 
+                "As células da camada espinhosa do epitélio de superfície apresentam-se tipicamente separadas, uma característica que tem sido denominada acantólise, e as células soltas tendem a assumir uma forma arredondada.",
+                "Essa característica do pênfigo vulgar pode ser utilizada para realizar o diagnóstico baseado na identificação dessas células arredondadas (células de Tzanck) no exame de citologia esfoliativa.", 
+                "Um infiltrado leve a moderado de células inflamatórias crônicas normalmente é observado no tecido conjuntivo subjacente."
+            ]
+        }
+    ]
+}

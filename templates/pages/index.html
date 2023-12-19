@@ -1,0 +1,102 @@
+{% include 'pages/header.html' %}
+
+<main>
+    <div class="container">
+        <div class="titulo">
+            <h2>INTRODUÇÃO</h2>
+            <hr/>
+        </div>
+        <div class="conteudo-container">
+            <div class="texto">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry 
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry 
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                </p>
+            </div>
+            <div class="imagem">
+                <img src="images/micrografia.jpg" alt="Imagem de microscópio">
+            </div>
+        </div>
+    </div>
+
+    <div class="container flex-center">
+        <a href="{{ url_for('categorias') }}" class="button-patologias">Patologias</a>
+    </div>
+
+    <div class="container">
+        <div class="titulo">
+            <h2>QUEM SOMOS</h2>
+            <hr/>
+        </div>
+        <div class="conteudo-container">
+            <div class="texto">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="imagem">
+                <img src="images/odonto-ufjf.jpg" alt="Imagem da universidade">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="titulo">
+            <h2>INTEGRANTES</h2>
+            <hr/>
+        </div>
+        <div class="container">
+            <div class="integrante">
+                <div class="imagem">
+                    <img src="images/ufjf.jpg" alt="Imagem do integrante">
+                </div>
+                <div class="texto">
+                    <h4>Fulano de Tal</h4>
+                    <p>Aluno de alguma coisa lá na UF</p>
+                </div>
+            </div>
+            <div class="integrante">
+                <div class="imagem">
+                    <img src="images/programacao.jpg" alt="Imagem do integrante">
+                </div>
+                <div class="texto">
+                    <h4>Fulano de Tal</h4>
+                    <p>Aluno de alguma coisa lá na UF</p>
+                </div>
+            </div>
+            <div class="integrante">
+                <div class="imagem">
+                    <img src="images/programacao.jpg" alt="Imagem do integrante">
+                </div>
+                <div class="texto">
+                    <h4>Fulano de Tal</h4>
+                    <p>Aluno de alguma coisa lá na UF</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% include 'pages/js_imports.html'%}
+
+{% include 'pages/footer.html' %}

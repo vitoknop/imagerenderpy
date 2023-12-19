@@ -1,0 +1,73 @@
+{% include 'pages/header.html' %}
+
+<main>
+    <div class="container">
+        <div class="container">
+            <div class="titulo">
+                <h2>{{ doenca.doenca }}</h2>
+                <hr/> <!-- Adicione um elemento pai, por exemplo, uma div -->
+            </div>
+            <div class="conteudo-container">
+                <div>
+                    {% if doenca.topicos %}
+                        {% for topico in doenca.topicos %}
+                            {% if topico.list %}
+                                <div class="texto mg-bottom">
+                                    <h3>{{ topico.titulo }}</h3>
+                                    <ul>
+                                        {% for item in topico.texto %}
+                                            <li>{{ item }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            {% else %}
+                                <div class="texto mg-bottom">
+                                    <h3>{{ topico.titulo }}</h3>
+                                    {% for item in topico.texto %}
+                                        <p>{{ item }}</p>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                    {% if doenca.imagens %}
+                        {% for imagem in doenca.imagens %}
+                            {% if imagem.legenda %}
+                                <div class="texto mg-bottom">
+                                    <h3>Legenda: {{ imagem.titulo }}</h3>
+                                    <ul>
+                                        {% for chave, valor in imagem.legenda.items() %}
+                                            <li>{{ chave }}: {{ valor }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                </div>
+                <div>
+                    {% if doenca.imagens %}
+                        {% for imagem in imagens_base64 %}
+                        <div class="imagem mg-bottom">
+                            <img now="0" src="data:image/jpeg;base64, {{ imagem[0] }}" onclick="changeImage(this, ['data:image/jpeg;base64, {{ imagem[0] }}', 'data:image/jpeg;base64, {{ imagem[1] }}'])">
+                        </div>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<script>
+    function changeImage(element, newSrc) {
+        let now = parseInt(element.getAttribute('now'));
+        element.setAttribute('now', (now === 0) ? 1 : 0);
+        element.src = newSrc[now];
+    }
+</script>
+
+{% include 'pages/js_imports.html'%}
+
+{% include 'pages/footer.html' %}
