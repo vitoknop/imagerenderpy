@@ -115,9 +115,7 @@ def enviar():
                 # Salva o arquivo zip no servidor
                 caminho_arquivo = os.path.join('uploads', arquivo_zip.filename)
                 arquivo_zip.save(caminho_arquivo)
-
-                return f'Arquivo {arquivo_zip.filename} enviado com sucesso!'
-    
+                return f'Arquivo {arquivo_zip.filename} enviado com sucesso!'    
     return render_template('enviar.html')  # Adicione um formulário HTML para enviar arquivos
 
 @app.route('/download')

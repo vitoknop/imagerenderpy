@@ -2,20 +2,20 @@
     "doenca": "Ameloblastoma",
     "imagens": [
         {   
-            "titulo": "Radoiografia",
+            "titulo": "Radiografia",
             "arquivo": ["radio-ameloblastoma.PNG", "P-radio-ameloblastoma.png"],
             "legenda": {
-                "e03fc0": "Estroma de tecido conjuntivo fibroso",
-                "00ff1e": "Múltiplas ilhas de epitélio odontogênico",
-                "00ff1a": "Células das ilhas exibindo diferenciação colunar periférica com polarização invertida",
-                "d48f0b": "Zonas centrais lembrando o retículo estrelado do esmalte, exibindo focos de degeneração cística"
+                "ffba00": "Lesão"
             }
         },
         {
             "titulo": "Fotomicrografia",
             "arquivo": ["ameloblastoma.PNG", "P-ameloblastoma.png"],
             "legenda": {
-                "ffba00": "Lesão"
+                "e03fc0": "Estroma de tecido conjuntivo fibroso",
+                "00ff1e": "Múltiplas ilhas de epitélio odontogênico",
+                "00ff1a": "Células das ilhas exibindo diferenciação colunar periférica com polarização invertida",
+                "d48f0b": "Zonas centrais lembrando o retículo estrelado do esmalte, exibindo focos de degeneração cística"
             }
         }
     ],

@@ -8,7 +8,7 @@
                 <hr/> <!-- Adicione um elemento pai, por exemplo, uma div -->
             </div>
             <div class="conteudo-container">
-                <div>
+                <div class="coteudo-left">
                     {% if doenca.topicos %}
                         {% for topico in doenca.topicos %}
                             {% if topico.list %}
@@ -37,7 +37,12 @@
                                     <h3>Legenda: {{ imagem.titulo }}</h3>
                                     <ul>
                                         {% for chave, valor in imagem.legenda.items() %}
-                                            <li>{{ chave }}: {{ valor }}</li>
+                                            <li>
+                                                <svg width="20" height="20">
+                                                    <rect width="20" height="20" style="fill:#{{ chave }}" />
+                                                </svg>
+                                                : {{ valor }}
+                                            </li>
                                         {% endfor %}
                                     </ul>
                                 </div>
@@ -45,10 +50,10 @@
                         {% endfor %}
                     {% endif %}
                 </div>
-                <div>
+                <div class="coteudo-right">
                     {% if doenca.imagens %}
                         {% for imagem in imagens_base64 %}
-                        <div class="imagem mg-bottom">
+                        <div class="imagem mg-bottom patoimage">
                             <img now="0" src="data:image/jpeg;base64, {{ imagem[0] }}" onclick="changeImage(this, ['data:image/jpeg;base64, {{ imagem[0] }}', 'data:image/jpeg;base64, {{ imagem[1] }}'])">
                         </div>
                         {% endfor %}

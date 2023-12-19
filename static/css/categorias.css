@@ -28,7 +28,7 @@
     font-size: 2rem;
     font-weight: 600;
     text-size-adjust: 100%;
-    word-break: break-all;
+    text-align: center;
 }
 
 .categorias .categoria .categoria-descricao {
@@ -63,4 +63,16 @@
     cursor: pointer;
     background: linear-gradient(245deg, #882988 19.02%, #3F2065 101.19%);
     color: #000;
+}
+
+@media (max-width: 1400px) {
+    .categorias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1000px) {
+    .categorias {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

@@ -51,7 +51,7 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-gap: 100px;
     margin-bottom: 50px;
-    align-items: center;
+    align-items: start;
 }
 
 .conteudo-container .texto {
@@ -68,6 +68,7 @@ main {
 .conteudo-container .imagem {
     width: 100%;
     display: block;
+    max-width: 600px;
 }
 
 .conteudo-container .imagem img {
@@ -95,4 +96,93 @@ main {
     cursor: pointer;
     background: linear-gradient(245deg, #882988 19.02%, #3F2065 101.19%);
     color: #000;
+}
+
+.integrante {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.integrante .imagem {
+    width: 100%;
+    display: block;
+    max-width: 90px;
+}
+
+.conteudo-left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.conteudo-right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+}
+
+.patoimage {
+    position: relative;
+}
+
+.patoimage::after {
+    content: 'Clique na imagem!';
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: #3F2065; /* Cor de fundo do ícone */
+    color: #fff; /* Cor do texto do ícone */
+    padding: 5px; /* Espaçamento interno do ícone */
+    font-size: 14px; /* Tamanho inicial da fonte do ícone */
+    cursor: pointer;
+    animation: pulse 1.5s infinite alternate; /* Adiciona animação de pulsação */
+}
+
+@keyframes pulse {
+    from {
+        border: 2px solid #3F2065; 
+    }
+    to {
+        border: 2px solid #fff;
+    }
+}
+
+@media (max-width: 1400px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagem {
+        width: 100%;
+        max-width: 600px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .conteudo-container {
+        grid-template-columns: 1fr;
+    }
+
+    .integrante {
+        flex-direction: column;
+    }
+
+    .conteudo-left {
+        margin-bottom: 50px;
+    }
 }
