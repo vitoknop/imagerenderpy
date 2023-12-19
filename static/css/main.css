@@ -186,3 +186,35 @@ main {
         margin-bottom: 50px;
     }
 }
+
+/* smartphone*/
+@media (max-width: 768px) {
+    main {
+        padding: 50px 20px 0 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagem {
+        width: 100%;
+        max-width: 600px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .conteudo-container {
+        grid-template-columns: 1fr;
+    }
+
+    .integrante {
+        flex-direction: column;
+    }
+
+    .conteudo-left {
+        margin-bottom: 50px;
+    }
+}
