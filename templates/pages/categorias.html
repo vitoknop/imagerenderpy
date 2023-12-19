@@ -18,7 +18,7 @@
 </main>
 
 <script>
-    fetch('http://localhost:5000/api/get-categorias')
+    fetch('/api/get-categorias')
         .then(response => response.json())
         .then(data => {
             categorias = document.getElementById('categorias');
@@ -48,7 +48,7 @@
 
                 categoriaLink = document.createElement('a');
                 categoriaLink.classList.add('categoria-link');
-                categoriaLink.href = 'http://localhost:5000/categoria?categoria=' + categoria.caminho;
+                categoriaLink.href = '/categoria?categoria=' + categoria.caminho;
                 categoriaLink.innerHTML = 'Visualizar';
 
                 categoriaLinkDiv.appendChild(categoriaLink);

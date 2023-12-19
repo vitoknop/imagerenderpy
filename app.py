@@ -6,6 +6,9 @@ import base64
 
 from flask_cors import CORS
 
+host = os.environ.get('HOST', '0.0.0.0')
+port = int(os.environ.get('PORT', 5000))
+
 app = Flask(__name__, static_url_path='', static_folder='static', template_folder='templates')
 CORS(app)
 
@@ -132,4 +135,4 @@ def download():
     return send_file('download.zip', as_attachment=True)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host=host, port=port)
